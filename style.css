@@ -92,11 +92,16 @@ body.dark * {
     top: 50%;
     z-index: 1;
     transform: translateY(-50%);
+    animation: switcher-out .42s;
 }
 
+.switch button:hover{
+    outline: 8px solid var(--highlight-color);
+}
+
+
 .light .switch button{
-    right: 0;
-    left: initial;
+    animation: switcher .42s forwards;
 }
 
 .switch span{
@@ -192,5 +197,27 @@ body.dark * {
 
     .light{
         --bg-url: url(./assets/bg-desktop-light)
+    }
+}
+
+/* Animacao */
+
+@keyframes switcher {
+    0% {
+        left: 0 ;
+    }
+
+    100% {
+        left: 50%;
+    }
+}
+
+@keyframes switcher-out {
+    0% {
+        left: 50% ;
+    }
+
+    100% {
+        left: 0;
     }
 }
