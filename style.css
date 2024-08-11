@@ -2,11 +2,11 @@
 
 :root {
     --text-color: #000000;
-    --bg-url: url(/assets/bg-desktop.jpg);
+    --bg-url: url(bg-desktop.jpg);
     --borda-color: rgba(255, 255, 255, 0.5);
     --surface-color: rgba(255, 255, 255, 0.1);
     --highlight-color: rgba(255, 255, 255, 0.2);
-    --switch-bg-url: url(/assets/moon-stars.svg);
+    --switch-bg-url: url(moon-stars.svg);
 }
 
 body {
@@ -17,10 +17,10 @@ body {
 
 body.light {
     --text-color: #000000;
-    background: url(/assets/bg-desktop-light.jpg) no-repeat top center/cover;
+    background: url(bg-desktop-light.jpg) no-repeat top center/cover;
     --borda-color: rgba(0, 0, 0, 0.5);
     --highlight-color: rgba(0, 0, 0, 0.1);
-    --switch-bg-url: url(/assets/sun.svg);
+    --switch-bg-url: url(sun.svg);
 }
 
 body.light * {
@@ -192,11 +192,11 @@ body.dark * {
 
 @media screen and (min-width:700px){
     :root{
-        --bg-url: url(./assets/bg-desktop.jpg)
+        --bg-url: url(bg-desktop.jpg)
     }
 
     .light{
-        --bg-url: url(./assets/bg-desktop-light)
+        --bg-url: url(bg-desktop-light)
     }
 }
 
