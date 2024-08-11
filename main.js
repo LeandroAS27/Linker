@@ -4,8 +4,8 @@ function toggleMode(){
     body.classList.toggle('light')
 
     if (body.classList.contains('light')){
-        image.setAttribute('src', '/assets/unknown2.png')
+        image.setAttribute('src', 'unknown2.png')
     }else{
-        image.setAttribute('src', '/assets/unknown2.png') /* Pode trocar a foto aqui */
+        image.setAttribute('src', 'unknown2.png') /* Pode trocar a foto aqui */
     }
 }
